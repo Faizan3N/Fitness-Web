@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faizan Fitness</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        
+        body {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: aliceblue;
+            margin: 0px;
+            padding: 0px;
+            background: url('img/bg.jpg');
+        }
+
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+
+        .logo img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+
+        .logo h1 {
+            margin: 0;
+            color: white;
+        }
+
+        .navbar {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
+
+        .navbar li {
+            margin-right: 20px;
+        }
+
+        .navbar li a {
+            color: white;
+            text-decoration: none;
+            font-size: 20px;
+        }
+
+        .navbar li a:hover {
+            text-decoration: underline;
+        }
+
+        .actions {
+            display: flex;
+            align-items: center;
+        }
+
+        .btn {
+            margin-right: 10px;
+            background-color: black;
+            color: white;
+            padding: 8px 16px;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn:hover {
+            background-color: gray;
+        }
+
+        .container {
+            border: 2px solid white;
+            margin: 50px auto;
+            padding: 30px;
+            width: 50%;
+            border-radius: 28px;
+            background-color: rgba(255, 255, 255, 0.3);
+        }
+
+        .container h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        .form-group input {
+            display: block;
+            width: 100%;
+            padding: 10px;
+            border: 2px solid black;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        .form-group input::placeholder {
+            color: black;
+        }
+
+        .form-group label {
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .btn-submit {
+            display: block;
+            width: 100%;
+            background-color: black;
+            color: white;
+            padding: 10px;
+            border: none;
+            border-radius: 10px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        .btn-submit:hover {
+            background-color: gray;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="img/gym.jpeg" alt="Gym Logo">
+            <h1>Faizan Fitness</h1>
+        </div>
+
+        <nav>
+            <ul class="navbar">
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="actions">
+            <button class="btn">Call Us Now</button>
+            <button class="btn">Email Us</button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h1>Join the best gym in Lahore</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your Name" required>
+            </div>
+            <div class="form-group">
+                <label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your Age" required>
+            </div>
+            <div class="form-group">
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender" required>
+                    <option value="">Select</option>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="city">City:</label>
+                <input type="text" id="city" name="city" placeholder="Enter your City" required>
+            </div>
+            <button type="submit" class="btn-submit">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
